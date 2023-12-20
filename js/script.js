@@ -272,7 +272,9 @@ errorMeesage.style.display = 'block';
 function isNotError(){
     const todayElement = document.querySelector('.Today');
     const errorMeesage = document.querySelector('.containerError');
-    
+    const daysElement = document.querySelector('.classhandle5DaysClick');
+
+    daysElement.style.display = 'none';
     todayElement.style.display = 'block';
     errorMeesage.style.display = 'none';
 }
@@ -318,15 +320,20 @@ function getWeatherDays(city) {
 function handleTodayClick() {
     const todayElement = document.querySelector('.Today');
 const daysElement = document.querySelector('.classhandle5DaysClick');
+const errorMeesage = document.querySelector('.containerError');
 
+
+errorMeesage.style.display = 'none';
 daysElement.style.display = 'none';
 todayElement.style.display = 'block';
 }
 
 function handle5DaysClick() {
+const errorMeesage = document.querySelector('.containerError');
 const todayElement = document.querySelector('.Today');
 const daysElement = document.querySelector('.classhandle5DaysClick');
 
+errorMeesage.style.display = 'none';
 daysElement.style.display = 'block';
 todayElement.style.display = 'none';
 
