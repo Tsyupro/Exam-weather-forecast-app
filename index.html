@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз Погоди</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="left-side">
+            <div>Погода</div>
+        </div>
+
+        <div class="right-side">
+            <input type="text" placeholder="Пошук" id="Search">
+        </div>
+    </header>
+    <div class="navbar">
+        <div class="nav-button" onclick="handleTodayClick()">Сьогодні</div>
+        <div class="nav-button" onclick="handle5DaysClick()">5 днів</div>
+    </div>
+    <h1></h1>
+    <div class="Today">
+    <h2>Сьогоднішній день</h2>
+    <div class="weather-info">
+        <div class="weather-details">
+            <div class="icon"></div>
+            <div class="description"></div>
+        </div>
+        <div class="weather-details">
+            <div class="temperature"></div>
+            <div class="feels-like"></div>
+        </div>
+        <div class="weather-details">
+            <div class="sunrise"></div>
+            <div class="sunset"></div>
+            <div class="day-duration"></div>
+            <div class="date"></div>
+        </div>
+    </div>
+
+    <h2>Погода на сьогодні</h2>
+
+    <div class="container hourly-forecast" id="hourlyForecast">
+
+        <div class="weather-card">
+            <div class="icon"></div>
+            <h3>12:00 PM</h3>
+            <p class="description">Сонячно</p>
+            <p class="temperature">28°C</p>
+            <p class="feels-like">Відчувається як: 30°C</p>
+            <p class="wind">Вітер: 10 км/г, Південний</p>
+        </div>
+        <div class="weather-card">
+            <div class="icon">☀️</div>
+            <h3>12:00 PM</h3>
+            <p class="description">Сонячно</p>
+            <p class="temperature">28°C</p>
+            <p class="feels-like">Відчувається як: 30°C</p>
+            <p class="wind">Вітер: 10 км/г, Південний</p>
+        </div>
+        <div class="weather-card">
+            <div class="icon">☀️</div>
+            <h3>12:00 PM</h3>
+            <p class="description">Сонячно</p>
+            <p class="temperature">28°C</p>
+            <p class="feels-like">Відчувається як: 30°C</p>
+            <p class="wind">Вітер: 10 км/г, Південний</p>
+        </div>
+        <div class="weather-card">
+            <div class="icon">☀️</div>
+            <h3>12:00 PM</h3>
+            <p class="description">Сонячно</p>
+            <p class="temperature">28°C</p>
+            <p class="feels-like">Відчувається як: 30°C</p>
+            <p class="wind">Вітер: 10 км/г, Південний</p>
+        </div>
+        <div class="weather-card">
+            <div class="icon">☀️</div>
+            <h3>12:00 PM</h3>
+            <p class="description">Сонячно</p>
+            <p class="temperature">28°C</p>
+            <p class="feels-like">Відчувається як: 30°C</p>
+            <p class="wind">Вітер: 10 км/г, Південний</p>
+        </div>
+        <div class="weather-card">
+            <div class="icon">☀️</div>
+            <h3>12:00 PM</h3>
+            <p class="description">Сонячно</p>
+            <p class="temperature">28°C</p>
+            <p class="feels-like">Відчувається як: 30°C</p>
+            <p class="wind">Вітер: 10 км/г, Південний</p>
+        </div>
+    </div>
+
+    <h2>Погода в інших містах</h2>
+
+    <div class="container city-forecast" id="cityForecast">
+   
+    </div>
+</div>
+<div class="classhandle5DaysClick">
+<div class="weather-containertwo" id="weatherContainertwo">
+    
+</div>
+</div>
+<div class="containerError">
+    <h1>404</h1>
+    <p>Вибачте, але місто , яке ви шукаєте, не знайдено.</p>
+    <p>Можливо, ви ввели неправильну назву міста.</p>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
